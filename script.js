@@ -1,16 +1,24 @@
-const jokeContent = document.getElementById("joke");
-const btn = document.getElementById("btn");
-const url =
-  "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
-
-let getjoke = () => {
-  jokeContent.classList.remove("fade");
-
-  fetch(url)
-    .then((Response) => Response.json())
-    .then((result) => {
-      jokeContent.textContent = `${result.joke}`;
-    });
-  jokeContent.classList.add("fade");
-};
-addEventListener("click", getjoke);
+//select input box,para
+let guessNumber = document.getElementById("guessNumber")
+let result = document.getElementById("result")
+let randomNumber = Math.floor(Math.random()*10)+1
+let score = document.getElementById("score")
+let totalScore = 10
+function check()
+{
+    let enterNumber = guessNumber.value
+    if(randomNumber==enterNumber)
+    {
+        console.log("Right")
+        result.textContent="Right😏"
+        alert("You Won The Game!! 😎")
+        totalScore= totalScore+1
+        score.textContent="score: "+ totalScore
+    }
+    else{
+        totalScore= totalScore-1
+        score.textContent="score: "+ totalScore
+        console.log("Wrong")
+        result.textContent="Wrong🤯"
+    }
+}
