@@ -1,1 +1,1 @@
-# random-num-mini-project
+Here I'm Using HTML CSS and Basic JS function
