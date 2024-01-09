@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Random Joke</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <div class="jokeBox">
-      <span>😄</span>
-      <p id="joke" class="joke"></p>
-
-      <button id="btn" class="btn">Click to Laugh</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random mini project</title>
+    <link rel="stylesheet" href="./rannumpro.css">
+</head>
+<body>
+    <div class="main">
+    <h1 class="title">Guess the Number from 1 to 10</h1>
+    <div class="glassmorphism">
+    <input id="guessNumber" class="inputbox" placeholder="Enter Number From 1 to 10" type="text">
+    <button onclick="check()" class="btn">Check</button>
+    <h3 id="result">You are Wrong / Right</h3>
+    <h3 id="score">Score: 10</h3>
     </div>
-    <script src="./script.js"></script>
-  </body>
+    </div>
+    
+    <script src="./rannumpro.js"></script>
+</body>
 </html>
