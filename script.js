@@ -1,4 +1,3 @@
-//select input box,para
 let guessNumber = document.getElementById("guessNumber")
 let result = document.getElementById("result")
 let randomNumber = Math.floor(Math.random()*10)+1
